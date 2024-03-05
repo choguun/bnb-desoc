@@ -180,7 +180,7 @@ export const Post = ({post} : any) => {
 
     const fetchMetadata = async () => {
         const metadata = await axios.get(post.contentURI);
-        console.log(metadata.data);
+        // console.log(metadata.data);
         await setMetaData(metadata.data);
         await setLoading(false);
     };

@@ -61,7 +61,7 @@ export const Feed = () => {
         let postArray = [];
         postArray = [...postData];
         postArray.sort(compareByNo);
-        console.log(postArray);
+        // console.log(postArray);
         setPosts(postArray);
         toast.dismiss(id);
     };
